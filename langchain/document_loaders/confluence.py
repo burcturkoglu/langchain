@@ -217,7 +217,6 @@ class ConfluenceLoader(BaseLoader):
                 label=label,
                 limit=limit,
                 max_pages=max_pages,
-                expand="body.storage.value",
             )
             docs += self.process_pages(
                 pages, include_restricted_content, include_attachments, include_comments
